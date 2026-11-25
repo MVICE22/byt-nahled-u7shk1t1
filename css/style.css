@@ -83,6 +83,7 @@ section{position:relative;scroll-margin-top:24px}
 
 /* facts */
 .facts{padding:6px 0 clamp(64px,9vw,120px)}
+.fact-price{display:none}
 .facts-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .fact{padding:34px 8px 30px 26px;border-left:1px solid var(--line)}
 .fact:first-child{border-left:0;padding-left:0}
@@ -240,16 +241,16 @@ footer p{margin:0;max-width:78ch}
   .nav-inner.open{flex-wrap:wrap;border-radius:26px;max-width:92vw}
   .nav-inner.open .nav-links{display:flex;flex-direction:column;width:100%;order:5;padding:10px 0 14px}
   .nav-inner.open .nav-links a{padding:13px 16px}
-  .hero-price{position:static;text-align:left;margin-top:30px}
   .trans{grid-template-columns:1fr}
   .potential{grid-template-columns:1fr}
 }
 @media (max-width:640px){
   body{font-size:16px}
-  .tile{flex-basis:100%}
+  .tile{flex-basis:calc(var(--ar)*110px)}
   .facts-grid{grid-template-columns:1fr}
   .fact,.fact:first-child{border-left:0;padding-left:0;border-top:1px solid var(--line)}
-  .fact:first-child{border-top:0}
+  .fact-price{display:block;order:-1;border-top:0}
+  .hero-price{display:none}
   .feature-row{grid-template-columns:1fr 1fr}
   .feature{aspect-ratio:3/4}
   .pgrid{grid-template-columns:1fr}
