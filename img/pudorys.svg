@@ -1,0 +1,255 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="1150" viewBox="215 200 1260 1150" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+<defs>
+  <!-- svetle drevo (dub) -->
+  <pattern id="wood" width="200" height="80" patternUnits="userSpaceOnUse">
+    <rect width="200" height="80" fill="#EBDEC6"/>
+    <path d="M10,12H62M92,24H150M18,52H84M112,64H192M150,8H196M30,30H70" stroke="#E2D3B6" stroke-width="1"/>
+    <path d="M0,0H200M0,40H200" stroke="#D8C8A8" stroke-width="1.2"/>
+    <path d="M70,0V40M150,40V80" stroke="#D8C8A8" stroke-width="1.2"/>
+  </pattern>
+  <!-- seda dlazba -->
+  <pattern id="tile" width="59" height="59" patternUnits="userSpaceOnUse">
+    <rect width="59" height="59" fill="#C4C6C9"/>
+    <path d="M0,0H59M0,0V59" stroke="#A8AAAE" stroke-width="1.6"/>
+  </pattern>
+  <pattern id="marble" width="200" height="200" patternUnits="userSpaceOnUse">
+    <rect width="200" height="200" fill="#F6F6F6"/>
+    <path d="M0,60C40,40 70,90 120,70S180,30 200,50" stroke="#C9CBCF" stroke-width="1.6" fill="none"/>
+    <path d="M30,200C60,150 90,170 130,120S190,110 200,90" stroke="#D5D7DA" stroke-width="1.4" fill="none"/>
+    <path d="M0,150C30,140 50,120 80,125" stroke="#DADCDF" stroke-width="1.2" fill="none"/>
+  </pattern>
+  <pattern id="plaid" width="10" height="10" patternUnits="userSpaceOnUse">
+    <rect width="10" height="10" fill="#9B9C9F"/><rect width="5" height="5" fill="#6F7073"/><rect x="5" y="5" width="5" height="5" fill="#6F7073"/>
+  </pattern>
+  <clipPath id="rugclip"><rect x="297" y="675" width="288" height="202"/></clipPath>
+  <style>
+    .o{stroke:#3a3a3a;stroke-width:1.5}
+    .wal{fill:#66452B;stroke:#2e1c12;stroke-width:1.5}
+    .walL{stroke:#46301e;stroke-width:1.2}
+    .num{font-weight:700;font-size:62px;text-anchor:middle}
+  </style>
+</defs>
+
+
+
+<!-- ===== WALLS ===== -->
+<rect x="247" y="210" width="905" height="1095" fill="#BDBDBD" stroke="#555" stroke-width="2"/>
+
+<!-- ===== FLOORS ===== -->
+<rect x="270" y="236" width="425" height="332" fill="url(#wood)"/>
+<rect x="708" y="236" width="100" height="192" fill="url(#tile)"/>
+<rect x="823" y="236" width="305" height="192" fill="url(#tile)"/>
+<rect x="708" y="442" width="420" height="126" fill="url(#wood)"/>
+<path d="M270,580H880V635H1128V910H880V977H270Z" fill="url(#wood)"/>
+<path d="M780,990H900V925H1128V1280H780Z" fill="url(#wood)"/>
+<!-- openings -->
+<rect x="695" y="470" width="13" height="75" fill="url(#wood)"/>
+<rect x="727" y="428" width="61" height="14" fill="url(#wood)"/>
+<rect x="910" y="428" width="62" height="14" fill="url(#wood)"/>
+<rect x="788" y="568" width="74" height="12" fill="url(#wood)"/>
+<rect x="798" y="977" width="70" height="13" fill="url(#wood)"/>
+<rect x="1128" y="462" width="24" height="83" fill="#fff"/>
+<!-- skrin v predsini je pristupna z chodby (otevreny vyklenek) -->
+<rect x="900" y="568" width="228" height="14" fill="url(#wood)"/>
+
+<!-- ===== TERRACE ===== -->
+<rect x="250" y="1003" width="505" height="297" fill="#fff"/>
+<g stroke="#C9C9CC" stroke-width="2">
+  <path d="M332,1003V1300M418,1003V1300M505,1003V1300M592,1003V1300M678,1003V1300"/>
+  <path d="M250,1042H755M250,1130H755M250,1217H755"/>
+</g>
+<rect x="250" y="1003" width="505" height="297" fill="none" stroke="#111" stroke-width="3"/>
+
+<!-- ===== WINDOWS / GLAZING ===== -->
+<g fill="#fff" stroke="#8a8a8a" stroke-width="1.2">
+  <rect x="247" y="290" width="23" height="100"/><rect x="247" y="430" width="23" height="100"/>
+  <rect x="247" y="732" width="23" height="170"/>
+  <rect x="431" y="977" width="253" height="26"/>
+  <rect x="756" y="1010" width="24" height="240"/>
+</g>
+<g stroke="#8a8a8a" stroke-width="1">
+  <path d="M258.5,290V390M258.5,430V530M258.5,732V902"/>
+  <path d="M431,984H684M431,990H684M431,996H684"/>
+  <path d="M762,1010V1250M768,1010V1250M774,1010V1250"/>
+</g>
+
+<!-- ===== DOORS ===== -->
+<g fill="none" stroke="#333" stroke-width="1.4">
+  <path d="M727,428L727,367A61,61 0 0 1 788,428Z"/>
+  <path d="M910,428L910,366A62,62 0 0 1 972,428Z"/>
+  <path d="M708,545L633,545A75,75 0 0 1 708,470Z"/>
+  <path d="M1128,545L1048,545A80,80 0 0 1 1128,465Z"/>
+  <path d="M788,580L788,654A74,74 0 0 0 862,580Z"/>
+  <path d="M868,982L868,912A70,70 0 0 0 798,982Z"/>
+</g>
+
+<!-- ===== ROOM 4 (detsky pokoj) ===== -->
+<rect x="335" y="236" width="263" height="54" fill="#B5803F" stroke="#6b4a24" stroke-width="1.5"/>
+<path d="M401,236V290M467,236V290M533,236V290" stroke="#8a5f2c" stroke-width="1.2"/>
+<g transform="translate(13,-2)">
+  <rect x="585" y="238" width="97" height="190" rx="4" fill="#6E6F72" class="o"/>
+  <rect x="590" y="300" width="87" height="125" rx="3" fill="#8F9094" stroke="#3a3a3a" stroke-width="1.2"/>
+  <rect x="590" y="350" width="87" height="75" fill="url(#plaid)" stroke="#3a3a3a" stroke-width="1.2"/>
+  <rect x="604" y="246" width="60" height="36" rx="7" fill="#EDEDED" class="o"/>
+</g>
+<!-- stul po cele stene pod okny - bezovy -->
+<rect x="270" y="236" width="59" height="332" fill="#D2BC94" stroke="#8F7D58" stroke-width="1.5"/>
+<rect x="272" y="402" width="9" height="58" fill="#4a4b4f" stroke="#111" stroke-width="1"/>
+<rect x="296" y="408" width="26" height="46" rx="2" fill="#555659" stroke="#111" stroke-width="1"/>
+<rect x="338" y="400" width="52" height="62" rx="14" fill="#1b1b1d" stroke="#000" stroke-width="1.5"/>
+<rect x="346" y="408" width="36" height="46" rx="10" fill="#2c2c2f"/>
+
+<!-- ===== ROOM 3 (pradelna) ===== -->
+<rect x="710" y="236" width="50" height="59" fill="#D9CDBE" class="o"/>
+<rect x="760" y="236" width="46" height="59" fill="#F2F2F2" class="o"/>
+<circle cx="783" cy="268" r="14" fill="#E2E4E6" stroke="#777" stroke-width="1.5"/>
+
+<!-- ===== ROOM 2 (koupelna) ===== -->
+<rect x="826" y="238" width="78" height="186" rx="10" fill="#F4F4F4" class="o"/>
+<rect x="834" y="247" width="62" height="168" rx="14" fill="#FBFBFB" stroke="#cfcfcf" stroke-width="1.2"/>
+<rect x="857" y="241" width="16" height="8" rx="2" fill="#aaa"/>
+<circle cx="865" cy="398" r="4" fill="#bbb"/>
+<!-- skrinka pod umyvadlem -->
+<rect x="925" y="236" width="112" height="56" fill="#E5E1D8" stroke="#8a8a8a" stroke-width="1.5"/>
+<path d="M981,262V292" stroke="#9a9a9a" stroke-width="1.2"/>
+<rect x="953" y="246" width="56" height="30" rx="10" fill="#fff" class="o"/>
+<circle cx="981" cy="241" r="3" fill="#888"/>
+<rect x="1037" y="236" width="91" height="59" fill="#6E8E85" stroke="#3f564f" stroke-width="1.5"/>
+<!-- WC +20 % -->
+<rect x="1114" y="356" width="14" height="48" rx="2" fill="#f4f4f4" class="o"/>
+<ellipse cx="1086" cy="380" rx="29" ry="24" fill="#f4f4f4" class="o"/>
+<ellipse cx="1086" cy="380" rx="20" ry="15" fill="#e6e6e6" stroke="#8a8a8a" stroke-width="1"/>
+
+<!-- ===== HALL (1) ===== -->
+<rect x="900" y="568" width="228" height="54" class="wal"/>
+<path d="M957,568V622M1014,568V622M1071,568V622" class="walL"/>
+
+<!-- ===== ROOM 5 ===== -->
+<!-- TV stena: bezova, +20 % hlubsi -->
+<rect x="273" y="582" width="500" height="36" rx="3" fill="#D4BE96" stroke="#8C7B5A" stroke-width="1.5"/>
+<!-- televize: stred TV steny (x 273-773 => 523) -->
+<rect x="438" y="595" width="170" height="10" rx="2" fill="#1d1d1f" stroke="#000" stroke-width="1.2"/>
+<rect x="441" y="597" width="164" height="2" fill="#4a4a4e"/>
+
+<g transform="translate(-28,97)">
+  <rect x="297" y="675" width="288" height="202" fill="#EFE9DF" stroke="#222" stroke-width="1.8"/>
+  <g clip-path="url(#rugclip)" fill="none" stroke="#6b6b6b" stroke-width="1">
+    <circle cx="480" cy="740" r="60"/><circle cx="480" cy="740" r="85"/><circle cx="480" cy="740" r="110"/><circle cx="480" cy="740" r="135"/><circle cx="480" cy="740" r="160"/><circle cx="480" cy="740" r="185"/>
+  </g>
+  <circle cx="480" cy="740" r="35" fill="#3A3B3D" stroke="#1c1c1c" stroke-width="1.5"/>
+  <circle cx="480" cy="740" r="28" fill="none" stroke="#55565a" stroke-width="1"/>
+</g>
+<g transform="translate(270,834)">
+  <rect x="0" y="0" width="102" height="125" rx="8" fill="#85868A" class="o"/>
+  <rect x="8" y="8" width="86" height="100" rx="6" fill="#9FA0A3" stroke="#4a4a4a" stroke-width="1.2"/>
+  <rect x="0" y="58" width="287" height="85" rx="8" fill="#85868A" class="o"/>
+  <rect x="8" y="8" width="86" height="100" rx="6" fill="#9FA0A3" stroke="#4a4a4a" stroke-width="1.2"/>
+  <rect x="106" y="62" width="80" height="55" rx="6" fill="#A2A3A6" stroke="#4a4a4a" stroke-width="1.2"/>
+  <rect x="190" y="62" width="85" height="55" rx="6" fill="#A2A3A6" stroke="#4a4a4a" stroke-width="1.2"/>
+  <rect x="0" y="120" width="287" height="23" rx="6" fill="#77787C" class="o"/>
+  <path d="M20,14C50,6 80,16 90,46C70,70 40,66 22,54Z" fill="#57585C" stroke="#2a2a2a" stroke-width="1.2"/>
+  <rect x="18" y="92" width="30" height="24" rx="5" fill="#4B4B4F" class="o" transform="rotate(-18 33 104)"/>
+  <rect x="52" y="86" width="30" height="28" rx="5" fill="#C9962B" class="o" transform="rotate(12 67 100)"/>
+  <rect x="226" y="88" width="42" height="32" rx="6" fill="#8D8F96" class="o" transform="rotate(-14 247 104)"/>
+</g>
+
+<!-- jidelni stul +25 % -->
+<rect x="697" y="808" width="42" height="26" rx="9" fill="#262628" class="o"/>
+<rect x="697" y="930" width="42" height="26" rx="9" fill="#262628" class="o"/>
+<rect x="644" y="861" width="26" height="42" rx="9" fill="#262628" class="o"/>
+<rect x="766" y="861" width="26" height="42" rx="9" fill="#262628" class="o"/>
+<circle cx="718" cy="882" r="51" fill="#3D3E41" stroke="#1c1c1c" stroke-width="1.8"/>
+<path d="M680,860C700,872 720,860 745,880M690,905C710,895 730,910 752,898" stroke="#5a5b5f" stroke-width="1.2" fill="none"/>
+
+<!-- ===== KUCHYN ===== -->
+<!-- spodni skrinky s mramorovou deskou: horni zed + levy vybezek + prava zed -->
+<path d="M890,635H1092V860H1060V703H948V772H890Z" fill="url(#marble)" stroke="#8a8a8a" stroke-width="1.5" stroke-linejoin="round"/>
+<g fill="none" stroke-linecap="round">
+  <path d="M898,690C915,698 930,692 944,700M1000,682C1015,690 1030,686 1048,696" stroke="#B3B6BB" stroke-width="1.4"/>
+  <path d="M960,700C975,692 990,698 1005,690" stroke="#CDCFD3" stroke-width="1.1"/>
+</g>
+<g fill="none" stroke-linecap="round">
+  <path d="M1062,684C1072,694 1078,706 1090,716M1062,812C1070,822 1080,830 1090,846" stroke="#B3B6BB" stroke-width="1.5"/>
+  <path d="M1062,800C1072,788 1080,776 1090,760M1064,698C1074,708 1082,720 1090,736" stroke="#C9CBCF" stroke-width="1.2"/>
+  <path d="M1062,846C1070,838 1078,832 1090,824" stroke="#D2D4D8" stroke-width="1.1"/>
+</g>
+<!-- spodni zed: vysoke skrine orech, bez pracovni desky -->
+<rect x="890" y="860" width="238" height="50" class="wal"/>
+<path d="M950,860V910M1010,860V910M1070,860V910" class="walL"/>
+<!-- prava zed: vinove skrinky -->
+<rect x="1092" y="635" width="36" height="225" fill="#6D1F2F" stroke="#3d0f19" stroke-width="1.5"/>
+<path d="M1092,690H1128M1092,745H1128M1092,800H1128" stroke="#3d0f19" stroke-width="1.2"/>
+<!-- horni skrinky na horni zdi (vinove, melci) -->
+<rect x="890" y="635" width="202" height="36" fill="#6D1F2F" stroke="#3d0f19" stroke-width="1.5"/>
+<path d="M940,635V671M991,635V671M1041,635V671" stroke="#3d0f19" stroke-width="1.2"/>
+<!-- dres, varna deska (na prave zdi), rostlinka -->
+<rect x="1063" y="725" width="26" height="70" rx="3" fill="#232326" stroke="#000" stroke-width="1.2"/>
+<g fill="none" stroke="#7a7b80" stroke-width="1.2"><circle cx="1070" cy="740" r="5"/><circle cx="1082" cy="740" r="5"/><circle cx="1070" cy="776" r="5"/><circle cx="1082" cy="776" r="5"/></g>
+
+<!-- ===== ROOM 6 (loznice) ===== -->
+<rect x="900" y="925" width="228" height="60" class="wal"/>
+<path d="M957,925V985M1014,925V985M1071,925V985" class="walL"/>
+<!-- postel: celo dole, prostěradlo pod dekou -->
+<rect x="857" y="1230" width="215" height="50" rx="10" fill="#CFC8BC" class="o"/>
+<rect x="860" y="1046" width="210" height="188" rx="5" fill="#D4D9DF" class="o"/>
+<rect x="872" y="1062" width="186" height="138" rx="5" fill="#D8CBB3" stroke="#3a3a3a" stroke-width="1.3"/>
+<g stroke="#BDAE92" stroke-width="1"><path d="M874,1078H1056M874,1094H1056M874,1110H1056M874,1126H1056"/></g>
+<rect x="860" y="1128" width="210" height="44" rx="8" fill="#EFE7D9" class="o"/>
+<rect x="880" y="1204" width="80" height="26" rx="8" fill="#505054" class="o"/>
+<rect x="968" y="1204" width="80" height="26" rx="8" fill="#505054" class="o"/>
+<rect x="813" y="1240" width="44" height="40" rx="2" class="wal"/>
+<rect x="1072" y="1240" width="44" height="40" rx="2" class="wal"/>
+<path d="M817,1246H853M1076,1246H1112" class="walL"/>
+
+<!-- ===== TERRACE FURNITURE ===== -->
+<!-- venkovni sedacka: L pres cely levy roh (leva zed + spodni zed) -->
+<rect x="252" y="1005" width="70" height="295" rx="8" fill="#7F8288" stroke="#4B4D52" stroke-width="1.5"/>
+<rect x="252" y="1230" width="195" height="70" rx="8" fill="#7F8288" stroke="#4B4D52" stroke-width="1.5"/>
+<rect x="252" y="1005" width="16" height="295" rx="6" fill="#6F7277" stroke="#4B4D52" stroke-width="1.2"/>
+<rect x="252" y="1284" width="195" height="16" rx="6" fill="#6F7277" stroke="#4B4D52" stroke-width="1.2"/>
+<g fill="#8F9094" stroke="#4B4D52" stroke-width="1.2">
+  <rect x="272" y="1015" width="44" height="56" rx="5"/><rect x="272" y="1076" width="44" height="56" rx="5"/><rect x="272" y="1137" width="44" height="56" rx="5"/>
+  <rect x="272" y="1236" width="46" height="44" rx="5"/><rect x="322" y="1236" width="58" height="44" rx="5"/><rect x="384" y="1236" width="58" height="44" rx="5"/>
+</g>
+<rect x="352" y="1078" width="78" height="122" fill="#26272A" stroke="#0e0e0f" stroke-width="1.5"/>
+<!-- gril antracit -->
+<rect x="488" y="1238" width="122" height="56" rx="5" fill="#34373B" stroke="#1C1D1F" stroke-width="1.8"/>
+<path d="M488,1266H610" stroke="#1C1D1F" stroke-width="1.5"/>
+<rect x="610" y="1244" width="30" height="44" rx="3" fill="#3C4045" stroke="#1C1D1F" stroke-width="1.5"/>
+<g fill="#7a7e83"><circle cx="512" cy="1281" r="4"/><circle cx="540" cy="1281" r="4"/><circle cx="568" cy="1281" r="4"/></g>
+
+<!-- ===== ROOM NUMBERS ===== -->
+<g class="num" fill="#111">
+  <text x="922" y="526">1</text>
+  <text x="995" y="352">2</text>
+  <text x="755" y="352">3</text>
+  <text x="440" y="410">4</text>
+  <text x="708" y="726">5</text>
+  <text x="822" y="1104">6</text>
+  <text x="547" y="1187">7</text>
+</g>
+
+<!-- ===== COMPASS (podle kompasu: dolni strana 240° JZ, leva strana 325° SZ; sever je 57,5° vlevo od svisle) ===== -->
+<g>
+  <circle cx="1350" cy="1090" r="62" fill="none" stroke="#7d705f" stroke-width="1.5"/>
+  <polygon points="1302.8,1059.9 1355.4,1081.6 1344.6,1098.4" fill="#2B2118" stroke="#2B2118" stroke-width="1.5" stroke-linejoin="round"/>
+  <polygon points="1397.2,1120.1 1355.4,1081.6 1344.6,1098.4" fill="#fff" stroke="#2B2118" stroke-width="1.5" stroke-linejoin="round"/>
+  <g stroke="#7d705f" stroke-width="1.5">
+    <path d="M1297.7,1056.7L1289.3,1051.3"/>
+    <path d="M1383.3,1037.7L1388.7,1029.3"/>
+    <path d="M1402.3,1123.3L1410.7,1128.7"/>
+    <path d="M1316.7,1142.3L1311.3,1150.7"/>
+  </g>
+  <g font-size="24" font-weight="700" fill="#2B2118" text-anchor="middle">
+    <text x="1277.5" y="1052">S</text>
+    <text x="1396.2" y="1026">V</text>
+    <text x="1422.5" y="1145">J</text>
+    <text x="1303.8" y="1171">Z</text>
+  </g>
+</g>
+<g font-size="20" font-weight="700" text-anchor="middle">
+  <text x="225" y="767" fill="#2B2118" transform="rotate(-90 225 760)">SZ</text>
+  <text x="700" y="1334" fill="#2B2118">JZ</text>
+</g>
+
+</svg>
