@@ -207,7 +207,7 @@ HTML = f'''<!doctype html>
           <li>klimatizace a rekuperace v každé místnosti</li>
           <li>podlahové vytápění, masivní dřevěné podlahy</li>
           <li>designové osvětlení s nastavitelnou intenzitou a teplotou světla v každé místnosti, pohybová čidla</li>
-          <li>plastová okna s hliníkovým opláštěním a trojskly plus předokenní žaluzie</li>
+          <li>plastová okna s hliníkovým opláštěním a trojskly, předokenní žaluzie</li>
           <li>vestavěné skříně a kuchyň na míru od truhláře</li>
           <li>dřevěné obložení na stěnách v obývacím pokoji</li>
         </ul>
