@@ -240,9 +240,9 @@ HTML = f'''<!doctype html>
       <a class="feature reveal" style="--d:.08s" href="#galerie">{im("wellness","Wellness v rezidenci","(max-width:640px) 50vw, 25vw")}<div><h3>Privátní wellness</h3><p>se saunou</p></div></a>
       <a class="feature reveal" style="--d:.16s" href="#galerie">{im("fitness","Fitness v rezidenci","(max-width:640px) 50vw, 25vw")}<div><h3>Privátní fitness</h3><p>vnitřní i venkovní</p></div></a>
       <div class="feature reveal" style="--d:.24s"><img src="img/skolka-1600.webp" srcset="img/skolka-900.webp 900w, img/skolka-1600.webp 1600w, img/skolka-2400.webp 2400w, img/skolka-3000.webp 3000w" sizes="(max-width:640px) 50vw, 25vw" width="3000" height="2003" alt="Ilustrační foto: děti si hrají ve školce" loading="lazy"><span class="tag">Ilustrační foto</span><div><h3>Soukromá školka</h3><p>přímo v areálu rezidence</p></div></div>
-      <a class="feature reveal" href="#galerie">{im("aerial-brana","Rezidence z výšky, 66 bytů","(max-width:640px) 50vw, 25vw")}<div><h3>Pouze 66 bytů</h3><p>v celé rezidenci</p></div></a>
+      <a class="feature pos-l reveal" href="#galerie">{im("aerial-brana","Rezidence z výšky, 66 bytů","(max-width:640px) 50vw, 25vw")}<div><h3>Pouze 66 bytů</h3><p>v celé rezidenci</p></div></a>
       <div class="feature reveal" style="--d:.08s"><img src="img/kolarna-1125.webp" srcset="img/kolarna-600.webp 600w, img/kolarna-1125.webp 1125w" width="1125" height="1500" sizes="(max-width:640px) 50vw, 25vw" alt="Ilustrační foto: kolárna s koly na stojanech" loading="lazy"><span class="tag">Ilustrační foto</span><div><h3>Kolárna a umývárna kol</h3></div></div>
-      <a class="feature wide reveal" style="--d:.16s" href="#galerie">{im("aerial-les","Rezidence z výšky uprostřed lesů","(max-width:640px) 100vw, 50vw")}<div><h3>Oplocený areál</h3><p>přístupný jen obyvatelům, kamerový systém v celé rezidenci</p></div></a>
+      <a class="feature wide zoom reveal" style="--d:.16s" href="#galerie">{im("aerial-les","Rezidence z výšky uprostřed lesů","(max-width:640px) 100vw, 50vw")}<div><h3>Oplocený areál</h3><p>přístupný jen obyvatelům, kamerový systém v celé rezidenci</p></div></a>
     </div>
   </div>
 </section>
