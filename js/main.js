@@ -26,14 +26,33 @@
   }
   window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
 
-  // gallery filter
-  var tiles=$$('.tile');
+  // gallery filter + sbalení po 1. dávce
+  var tiles=$$('.tile'), grid=$('.grid'), gwrap=$('.grid-wrap'), more=$('.more'), expanded=false;
+  function vis(){return tiles.filter(function(t){return !t.classList.contains('hide')})}
+  function layout(){
+    var v=vis(), cols=getComputedStyle(grid).gridTemplateColumns.split(' ').length, full=cols>=3?9:10;
+    if(expanded||v.length<=full+cols){gwrap.classList.remove('collapsed');more.hidden=true;grid.style.removeProperty('--peek');return}
+    var t=v[full-1], gap=parseFloat(getComputedStyle(grid).rowGap)||12;
+    grid.style.setProperty('--peek',(t.offsetTop+t.offsetHeight+gap+t.offsetHeight*.42)+'px');
+    $('.more-n').textContent=v.length;
+    gwrap.classList.add('collapsed');more.hidden=false;
+    v.slice(full,full+cols).forEach(function(x){var i=$('img',x);if(i)i.loading='eager'});
+  }
+  $('.more-btn').addEventListener('click',function(){expanded=true;layout()});
+  window.addEventListener('resize',layout);
+  window.addEventListener('load',function(){
+    layout();
+    var go=function(){vis().slice(0,12).forEach(function(x){var i=$('img',x);if(i)i.loading='eager'})};
+    (window.requestIdleCallback||function(f){setTimeout(f,300)})(go);
+  });
+  layout();
   $$('.tab').forEach(function(t){t.addEventListener('click',function(){
     $$('.tab').forEach(function(x){x.setAttribute('aria-pressed',x===t)});
     var f=t.dataset.f, isV=(f==='video');
-    $('.grid').hidden=isV; $('.video-panel').hidden=!isV;
+    gwrap.hidden=isV; $('.video-panel').hidden=!isV;
     if(isV)return;
     tiles.forEach(function(el){el.classList.toggle('hide',f!=='all'&&el.dataset.c.split(' ').indexOf(f)<0)});
+    expanded=false; layout();
   })});
 
   // video v galerii: soubor media/prohlidka.mp4 se použije automaticky, jakmile existuje
@@ -47,7 +66,7 @@
 
   // lightbox
   var lb=$('.lb'), lbImg=$('img',lb), lbCap=$('figcaption',lb), lbCount=$('.count',lb), cur=0, set=[];
-  function visible(){return tiles.filter(function(t){return !t.classList.contains('hide')})}
+  function visible(){return vis()}
   function show(i){
     cur=(i+set.length)%set.length; var t=set[cur];
     lbImg.src=t.dataset.full; lbImg.alt=t.dataset.cap; lbCap.textContent=t.dataset.cap;

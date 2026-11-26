@@ -52,8 +52,13 @@ dims={s:(w,h) for s,w,h,_,_ in P}
 def im(slug, alt, sizes="(max-width:1024px) 100vw, 50vw", cls=""):
     w,h=dims[slug]; return img(slug,w,h,alt,sizes,True,cls)
 
+import subprocess, base64
+def lqip(slug):
+    r=subprocess.run(["ffmpeg","-v","error","-i",f"img/{slug}-900.webp","-vf","scale=24:-2:flags=area","-q:v","8","-frames:v","1","-f","image2pipe","-vcodec","mjpeg","-"],capture_output=True,check=True)
+    return "data:image/jpeg;base64,"+base64.b64encode(r.stdout).decode()
+
 tiles="\n".join(
- f'''      <figure class="tile reveal" style="--ar:{w/h:.4f}" tabindex="0" role="button" data-c="{c}" data-full="img/{s}-{w}.webp" data-cap="{cap}" aria-label="Zvětšit fotku: {cap}">
+ f'''      <figure class="tile reveal" style="--ar:{w/h:.4f};background-image:url({lqip(s)});background-size:cover" tabindex="0" role="button" data-c="{c}" data-full="img/{s}-{w}.webp" data-cap="{cap}" aria-label="Zvětšit fotku: {cap}">
         {img(s,w,h,cap,"(max-width:640px) 56vw, (max-width:1024px) 56vw, 38vw")}
         <figcaption>{cap}</figcaption>
       </figure>''' for s,w,h,c,cap in P)
@@ -150,8 +155,11 @@ HTML = f'''<!doctype html>
         <button class="tab" data-f="video" aria-pressed="false">Video</button>
       </div>
     </div>
-    <div class="grid">
+    <div class="grid-wrap">
+      <div class="grid">
 {tiles}
+      </div>
+      <div class="more" hidden><button class="btn btn-green more-btn" type="button">Zobrazit všech <span class="more-n"></span> fotek</button></div>
     </div>
     <div class="video-panel" hidden>
       <div class="video-empty">
@@ -298,17 +306,18 @@ HTML = f'''<!doctype html>
     <div>
       <div class="eyebrow reveal">Kontakt</div>
       <h2 class="reveal">Přijďte se <em>podívat</em></h2>
-      <p class="lead reveal">Zavolejte mi nebo pošlete e-mail. Rád vám byt ukážu a odpovím na všechny otázky.</p>
+      <p class="lead reveal">Zavolejte mi nebo napište na WhatsApp či e-mail. Rád vám byt ukážu a odpovím na všechny otázky.</p>
     </div>
     <div class="card light reveal">
       <div class="who">Matěj Vais</div>
       <div class="role">majitel a prodávající</div>
       <a class="row" href="tel:+420737509539"><div><small>Telefon</small><strong>737 509 539</strong></div><span class="ic">→</span></a>
-      <a class="row" href="mailto:matejvais@seznam.cz?subject=Prohl%C3%ADdka%20bytu%20Harmonia"><div><small>E-mail</small><strong>matejvais@seznam.cz</strong></div><span class="ic">→</span></a>
+      <a class="row" href="mailto:matejvais@seznam.cz?subject=Prohl%C3%ADdka%20bytu%20Harmonia&amp;body=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20prohl%C3%ADdku%20bytu%20343%2F38%20v%20Harmonii."><div><small>E-mail</small><strong>matejvais@seznam.cz</strong></div><span class="ic">→</span></a>
       <a class="row" href="https://www.google.com/maps/search/?api=1&amp;query=Mezitra%C5%A5ov%C3%A1%20343%2F26%2C%20Praha%209" target="_blank" rel="noopener"><div><small>Adresa</small><strong>Mezitraťová 343/26, Praha 9 – Hrdlořezy</strong></div><span class="ic">↗</span></a>
       <div class="btns">
         <a class="btn btn-green" href="tel:+420737509539">Zavolat</a>
-        <a class="btn btn-line" href="mailto:matejvais@seznam.cz?subject=Prohl%C3%ADdka%20bytu%20Harmonia">Napsat e-mail</a>
+        <a class="btn btn-line" href="https://wa.me/420737509539?text=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20prohl%C3%ADdku%20bytu%20343%2F38%20v%20Harmonii." target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-line" href="mailto:matejvais@seznam.cz?subject=Prohl%C3%ADdka%20bytu%20Harmonia&amp;body=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20prohl%C3%ADdku%20bytu%20343%2F38%20v%20Harmonii.">Napsat e-mail</a>
       </div>
     </div>
   </div>
@@ -339,7 +348,7 @@ HTML = f'''<!doctype html>
   </div>
 </footer>
 
-<div class="mbar" aria-label="Rychlý kontakt"><a class="a" href="tel:+420737509539">Zavolat</a><a class="b" href="mailto:matejvais@seznam.cz?subject=Prohl%C3%ADdka%20bytu%20Harmonia">Napsat</a></div>
+<div class="mbar" aria-label="Rychlý kontakt"><a class="a" href="tel:+420737509539">Zavolat</a><a class="b" href="https://wa.me/420737509539?text=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20prohl%C3%ADdku%20bytu%20343%2F38%20v%20Harmonii." target="_blank" rel="noopener">WhatsApp</a></div>
 
 <div class="lb" role="dialog" aria-modal="true" aria-label="Galerie">
   <div class="count"></div>
