@@ -257,9 +257,11 @@ footer p{margin:0;max-width:78ch}
   .mbar{display:flex}
   .nav-cta{display:none}
   main#top{display:flex;flex-direction:column}
-  main#top>.hero{order:-3}
-  main#top>.facts{order:-2}
-  main#top>.gallery{order:-1}
+  main#top>.hero{order:-5}
+  main#top>.facts{order:-4}
+  main#top>.gallery{order:-3}
+  main#top>.plan{order:-2}
+  main#top>.desc{order:-1}
   .hero h1 .ln{display:block}
   .hero::after{height:9%}
   .hero h1{max-width:none;font-size:clamp(3.5rem,22.4vw,6.4rem);line-height:.93}
