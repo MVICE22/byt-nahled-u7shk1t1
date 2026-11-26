@@ -101,7 +101,7 @@ HTML = f'''<!doctype html>
     <img src="img/obyvak-tv-2400.webp" srcset="img/obyvak-tv-900.webp 900w, img/obyvak-tv-1600.webp 1600w, img/obyvak-tv-2400.webp 2400w, img/obyvak-tv-3000.webp 3000w" sizes="100vw" width="3000" height="2000" alt="Obývací pokoj s TV stěnou, knihovnou, sedačkou a dřevěným obložením" fetchpriority="high">
   </div>
   <div class="wrap hero-content">
-    <h1>Byt, který má vše<em>uprostřed zeleně, kousek od centra Prahy</em></h1>
+    <h1><span class="ln">Byt, </span><span class="ln">který </span><span class="ln">má&nbsp;vše</span><em>uprostřed zeleně, kousek od centra Prahy</em></h1>
     <p class="sub">Byt 3+kk, 78,1&nbsp;m² + terasa 14,8&nbsp;m². Kompletně vybavený, připravený k okamžitému nastěhování. Prodej přímo od majitele, bez realitní kanceláře a provize.</p>
     <div class="hero-actions">
       <a class="btn btn-light" href="#kontakt">Domluvit si prohlídku</a>
