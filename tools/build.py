@@ -36,7 +36,7 @@ P = [
  ("aerial-brana",     2667,2000,"rezidence","Rezidence"),
 ]
 
-ORDER = ['obyvak', 'obyvak-tv', 'obyvak-sedacka', 'obyvak-jidelna', 'kuchyn', 'loznice', 'loznice-skrine', 'detsky-pokoj', 'detsky-pokoj-mapa', 'koupelna-zelena', 'koupelna-vana', 'pradelna', 'predsin', 'terasa', 'terasa-shora', 'terasa-fasada', 'aerial-les', 'aerial-areal', 'aerial-rezidence', 'aerial-brana', 'nadvori', 'parkovani', 'garaz', 'sklep', 'wellness', 'sauna', 'fitness', 'hriste', 'les-slunce', 'les-stezka']
+ORDER = ['obyvak-jidelna', 'obyvak-tv', 'obyvak-sedacka', 'obyvak', 'kuchyn', 'loznice', 'loznice-skrine', 'detsky-pokoj', 'detsky-pokoj-mapa', 'predsin', 'koupelna-zelena', 'koupelna-vana', 'pradelna', 'terasa', 'terasa-shora', 'terasa-fasada', 'aerial-les', 'aerial-areal', 'aerial-rezidence', 'aerial-brana', 'nadvori', 'parkovani', 'garaz', 'sklep', 'wellness', 'sauna', 'fitness', 'hriste', 'les-slunce', 'les-stezka']
 P.sort(key=lambda p: ORDER.index(p[0]))
 
 def widths(W):
@@ -260,7 +260,11 @@ HTML = f'''<!doctype html>
       <div class="reveal" style="--d:.08s"><b>9 min</b><span>autem do OC Harfa a O2 areny</span></div>
       <div class="reveal" style="--d:.16s"><b>13 min</b><span>autem do OC Černý Most</span></div>
     </div>
-    <p class="reveal" style="margin-top:28px;font-size:.95rem;opacity:.85">Zastávka autobusu (146) 200 m, 2 min pěšky · Lidl 700 m, 15 min pěšky · zastávka tramvaje (8, 37, 94) 10 min pěšky</p>
+    <ul class="area-list reveal">
+      <li>zastávka autobusu (146) 200 m, 2 min pěšky</li>
+      <li>zastávka tramvaje (8, 37, 94) 10 min pěšky</li>
+      <li>Lidl 700 m, 15 min pěšky</li>
+    </ul>
   </div>
 </section>
 
