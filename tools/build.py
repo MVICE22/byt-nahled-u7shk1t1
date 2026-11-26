@@ -306,7 +306,7 @@ HTML = f'''<!doctype html>
     <div>
       <div class="eyebrow reveal">Kontakt</div>
       <h2 class="reveal">Přijďte se <em>podívat</em></h2>
-      <p class="lead reveal">Zavolejte mi nebo napište na WhatsApp či e-mail. Rád vám byt ukážu a odpovím na všechny otázky.</p>
+      <p class="lead reveal">Zavolejte mi nebo pošlete e-mail. Rád vám byt ukážu a odpovím na všechny otázky.</p>
     </div>
     <div class="card light reveal">
       <div class="who">Matěj Vais</div>

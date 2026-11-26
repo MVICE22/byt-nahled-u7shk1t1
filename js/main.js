@@ -31,9 +31,9 @@
   function vis(){return tiles.filter(function(t){return !t.classList.contains('hide')})}
   function layout(){
     var v=vis(), cols=getComputedStyle(grid).gridTemplateColumns.split(' ').length, full=cols>=3?9:10;
-    if(expanded||v.length<=full+cols){gwrap.classList.remove('collapsed');more.hidden=true;grid.style.removeProperty('--peek');return}
+    if(expanded||v.length<=full+cols){gwrap.classList.remove('collapsed');more.hidden=true;gwrap.style.removeProperty('--peek');return}
     var t=v[full-1], gap=parseFloat(getComputedStyle(grid).rowGap)||12;
-    grid.style.setProperty('--peek',(t.offsetTop+t.offsetHeight+gap+t.offsetHeight*.42)+'px');
+    gwrap.style.setProperty('--peek',(t.offsetTop+t.offsetHeight+gap+t.offsetHeight*.42)+'px');
     $('.more-n').textContent=v.length;
     gwrap.classList.add('collapsed');more.hidden=false;
     v.slice(full,full+cols).forEach(function(x){var i=$('img',x);if(i)i.loading='eager'});
