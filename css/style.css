@@ -246,7 +246,9 @@ footer p{margin:0;max-width:78ch}
 }
 @media (max-width:640px){
   body{font-size:16px}
-  .tile{flex-basis:calc(var(--ar)*110px)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .grid::after{display:none}
+  .tile{aspect-ratio:4/3;flex:none}
   .facts-grid{grid-template-columns:1fr}
   .fact,.fact:first-child{border-left:0;padding-left:0;border-top:1px solid var(--line)}
   .fact-price{display:block;order:-1;border-top:0}
