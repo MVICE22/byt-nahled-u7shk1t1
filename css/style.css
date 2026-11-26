@@ -256,7 +256,11 @@ footer p{margin:0;max-width:78ch}
   .pgrid{grid-template-columns:1fr}
   .mbar{display:flex}
   .nav-cta{display:none}
-  .hero h1{max-width:11ch}
+  .hero h1{max-width:8ch;font-size:clamp(3.9rem,19vw,5rem);line-height:.98}
+  .hero h1 em{font-size:.36em;margin-top:.7em}
+  .hero-media img,.hero-media video{object-position:80% 50%}
+  .hero-content{padding-top:130px;padding-bottom:110px}
+  .hero p.sub{font-size:1rem;margin:20px 0 26px}
   .lb .p,.lb .n{top:auto;bottom:24px;margin:0}
   .lb figure{margin-bottom:60px}
   .area::before{background:linear-gradient(180deg,rgba(30,9,13,.84),rgba(30,9,13,.72))}
