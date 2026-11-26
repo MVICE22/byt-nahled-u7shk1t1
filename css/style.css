@@ -132,7 +132,7 @@ section{position:relative;scroll-margin-top:24px}
 /* plan — přímo na pozadí */
 .plan{padding:clamp(80px,11vw,150px) 0}
 .plan-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,4vw,64px);align-items:center;margin-top:48px}
-.plan-fig img{width:100%;height:auto;max-height:78vh;margin:0 auto}
+.plan-fig img{width:100%;height:auto;max-height:78vh;margin:0 auto;mix-blend-mode:multiply}
 .legend{list-style:none;margin:0;padding:0}
 .legend li{display:flex;gap:16px;align-items:baseline;padding:15px 0;border-bottom:1px solid var(--line);font-size:1.02rem}
 .legend li span{font:300 1.3rem var(--display);color:var(--accent);min-width:1.4em}

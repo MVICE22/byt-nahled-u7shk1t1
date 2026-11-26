@@ -177,7 +177,7 @@ HTML = f'''<!doctype html>
     <div class="eyebrow reveal">Půdorys</div>
     <h2 class="reveal">Dispozice <em>3+kk</em></h2>
     <div class="plan-grid">
-      <div class="plan-fig reveal"><img src="img/pudorys.svg" width="1260" height="1150" alt="Půdorys bytu 3+kk se zakresleným nábytkem a světovými stranami" loading="lazy"></div>
+      <div class="plan-fig reveal"><img src="img/pudorys-tv.jpg" width="2240" height="2080" alt="Půdorys bytu 3+kk se zakresleným nábytkem a světovými stranami" loading="lazy"></div>
       <div class="reveal">
         <ol class="legend">
           <li><span>1</span>Předsíň</li>
