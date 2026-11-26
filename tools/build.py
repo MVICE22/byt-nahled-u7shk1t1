@@ -285,22 +285,6 @@ HTML = f'''<!doctype html>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="faq">
-  <div class="wrap">
-    <div class="eyebrow reveal">Časté otázky</div>
-    <h2 class="reveal">Co se nejčastěji <em>ptáte</em></h2>
-    <div class="faq-list reveal">
-      <details><summary>Prodáváte přes realitní kancelář?</summary><p>Ne. Prodej probíhá přímo od majitele, bez realitní kanceláře a bez provize.</p></details>
-      <details><summary>Je byt vybavený?</summary><p>Ano, byt je kompletně vybavený. Je možné jej přebrat jak s vybavením, tak bez vybavení.</p></details>
-      <details><summary>Kdy se lze nastěhovat?</summary><p>Byt je připravený k okamžitému nastěhování.</p></details>
-      <details><summary>Co všechno je v ceně?</summary><p>Garážové stání, venkovní stání s přípravou pro nabíjení elektromobilu a sklep jsou v ceně bytu.</p></details>
-      <details><summary>Je to družstevní byt. Dá se převést do osobního vlastnictví?</summary><p>Ano, byt lze převést do osobního vlastnictví.</p></details>
-      <details><summary>Schvaluje převod družstvo?</summary><p>Převod podílu na nové majitele nepodléhá souhlasu orgánů družstva a nikdo neschvaluje bonitu a schopnost splácet měsíční splátky nových majitelů.</p></details>
-    </div>
-  </div>
-</section>
-
 <!-- KONTAKT -->
 <section class="contact" id="kontakt">
   <div class="wrap contact-grid">
@@ -319,6 +303,22 @@ HTML = f'''<!doctype html>
         <a class="btn btn-green" href="tel:+420737509539">Zavolat</a>
         <a class="btn btn-line" href="mailto:matejvais@seznam.cz?subject=Prohl%C3%ADdka%20bytu%20Harmonia">Napsat e-mail</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <div class="eyebrow reveal">Časté otázky</div>
+    <h2 class="reveal">Co se nejčastěji <em>ptáte</em></h2>
+    <div class="faq-list reveal">
+      <details><summary>Prodáváte přes realitní kancelář?</summary><p>Ne. Prodej probíhá přímo od majitele, bez realitní kanceláře a bez provize.</p></details>
+      <details><summary>Je byt vybavený?</summary><p>Ano, byt je kompletně vybavený. Je možné jej přebrat jak s vybavením, tak bez vybavení.</p></details>
+      <details><summary>Kdy se lze nastěhovat?</summary><p>Byt je připravený k okamžitému nastěhování.</p></details>
+      <details><summary>Co všechno je v ceně?</summary><p>Garážové stání, venkovní stání s přípravou pro nabíjení elektromobilu a sklep jsou v ceně bytu.</p></details>
+      <details><summary>Je to družstevní byt. Dá se převést do osobního vlastnictví?</summary><p>Ano, byt lze převést do osobního vlastnictví.</p></details>
+      <details><summary>Schvaluje převod družstvo?</summary><p>Převod podílu na nové majitele nepodléhá souhlasu orgánů družstva a nikdo neschvaluje bonitu a schopnost splácet měsíční splátky nových majitelů.</p></details>
     </div>
   </div>
 </section>
