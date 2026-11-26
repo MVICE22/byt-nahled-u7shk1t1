@@ -188,7 +188,7 @@ HTML = f'''<!doctype html>
           <li><span>6</span>Ložnice</li>
           <li><span>7</span>Terasa 14,8 m²</li>
         </ol>
-        <div class="orient"><strong>Orientace:</strong> okna na jihozápad a severozápad, terasa na jihozápad.</div>
+        <div class="orient"><strong>Orientace:</strong> okna a terasa na jihozápad a severozápad.</div>
       </div>
     </div>
   </div>
