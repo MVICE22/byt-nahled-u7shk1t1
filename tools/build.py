@@ -54,7 +54,7 @@ def im(slug, alt, sizes="(max-width:1024px) 100vw, 50vw", cls=""):
 
 tiles="\n".join(
  f'''      <figure class="tile reveal" style="--ar:{w/h:.4f}" tabindex="0" role="button" data-c="{c}" data-full="img/{s}-{w}.webp" data-cap="{cap}" aria-label="Zvětšit fotku: {cap}">
-        {img(s,w,h,cap,"(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw")}
+        {img(s,w,h,cap,"(max-width:640px) 50vw, (max-width:1024px) 50vw, 33vw")}
         <figcaption>{cap}</figcaption>
       </figure>''' for s,w,h,c,cap in P)
 
