@@ -251,7 +251,8 @@ footer p{margin:0;max-width:78ch}
   .fact,.fact:first-child{border-left:0;padding-left:0;border-top:1px solid var(--line)}
   .fact-price{display:block;order:-1;border-top:0}
   .hero-price{display:none}
-  .feature-row{grid-template-columns:1fr 1fr}
+  .feature-row{grid-template-columns:1fr 1fr;margin-top:0}
+  .eyebrow{letter-spacing:.14em;font-size:.72rem;margin-bottom:16px}
   .feature{aspect-ratio:3/4}
   .pgrid{grid-template-columns:1fr}
   .mbar{display:flex}
