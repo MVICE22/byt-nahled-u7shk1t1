@@ -218,7 +218,7 @@ details p{padding:0 0 26px;margin:0;color:var(--muted);max-width:64ch}
 .card .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
 
 footer{padding:40px 0 100px;background:#2e1014;color:rgba(246,237,222,.72);font-size:.85rem}
-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+footer .wrap{display:flex;flex-direction:column;gap:14px}
 footer p{margin:0;max-width:78ch}
 
 /* mobile bar */
