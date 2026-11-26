@@ -30,7 +30,7 @@
   var tiles=$$('.tile'), grid=$('.grid'), gwrap=$('.grid-wrap'), more=$('.more'), expanded=false;
   function vis(){return tiles.filter(function(t){return !t.classList.contains('hide')})}
   function layout(){
-    var v=vis(), cols=getComputedStyle(grid).gridTemplateColumns.split(' ').length, full=cols>=3?9:10;
+    var v=vis(), cols=getComputedStyle(grid).gridTemplateColumns.split(' ').length, full=6;
     if(expanded||v.length<=full+cols){gwrap.classList.remove('collapsed');more.hidden=true;gwrap.style.removeProperty('--peek');return}
     var t=v[full-1], gap=parseFloat(getComputedStyle(grid).rowGap)||12;
     gwrap.style.setProperty('--peek',(t.offsetTop+t.offsetHeight+gap+t.offsetHeight*.42)+'px');

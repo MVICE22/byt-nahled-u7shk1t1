@@ -312,12 +312,12 @@ HTML = f'''<!doctype html>
       <div class="who">Matěj Vais</div>
       <div class="role">majitel a prodávající</div>
       <a class="row" href="tel:+420737509539"><div><small>Telefon</small><strong>737 509 539</strong></div><span class="ic">→</span></a>
-      <a class="row" href="mailto:matejvais@seznam.cz?subject=Prohl%C3%ADdka%20bytu%20Harmonia&amp;body=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20prohl%C3%ADdku%20bytu%20343%2F38%20v%20Harmonii."><div><small>E-mail</small><strong>matejvais@seznam.cz</strong></div><span class="ic">→</span></a>
+      <a class="row" href="mailto:matejvais@seznam.cz?subject=Prohl%C3%ADdka%20bytu%20Harmonia&amp;body=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20prohl%C3%ADdku%20a%20bli%C5%BE%C5%A1%C3%AD%20informace%20k%20bytu%20v%20rezidenci%20Harmonia."><div><small>E-mail</small><strong>matejvais@seznam.cz</strong></div><span class="ic">→</span></a>
       <a class="row" href="https://www.google.com/maps/search/?api=1&amp;query=Mezitra%C5%A5ov%C3%A1%20343%2F26%2C%20Praha%209" target="_blank" rel="noopener"><div><small>Adresa</small><strong>Mezitraťová 343/26, Praha 9 – Hrdlořezy</strong></div><span class="ic">↗</span></a>
       <div class="btns">
         <a class="btn btn-green" href="tel:+420737509539">Zavolat</a>
-        <a class="btn btn-line" href="https://wa.me/420737509539?text=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20prohl%C3%ADdku%20bytu%20343%2F38%20v%20Harmonii." target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn btn-line" href="mailto:matejvais@seznam.cz?subject=Prohl%C3%ADdka%20bytu%20Harmonia&amp;body=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20prohl%C3%ADdku%20bytu%20343%2F38%20v%20Harmonii.">Napsat e-mail</a>
+        <a class="btn btn-line" href="https://wa.me/420737509539?text=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20prohl%C3%ADdku%20a%20bli%C5%BE%C5%A1%C3%AD%20informace%20k%20bytu%20v%20rezidenci%20Harmonia." target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-line" href="mailto:matejvais@seznam.cz?subject=Prohl%C3%ADdka%20bytu%20Harmonia&amp;body=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20prohl%C3%ADdku%20a%20bli%C5%BE%C5%A1%C3%AD%20informace%20k%20bytu%20v%20rezidenci%20Harmonia.">Napsat e-mail</a>
       </div>
     </div>
   </div>
@@ -348,7 +348,7 @@ HTML = f'''<!doctype html>
   </div>
 </footer>
 
-<div class="mbar" aria-label="Rychlý kontakt"><a class="a" href="tel:+420737509539">Zavolat</a><a class="b" href="https://wa.me/420737509539?text=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20prohl%C3%ADdku%20bytu%20343%2F38%20v%20Harmonii." target="_blank" rel="noopener">WhatsApp</a></div>
+<div class="mbar" aria-label="Rychlý kontakt"><a class="a" href="tel:+420737509539">Zavolat</a><a class="b" href="https://wa.me/420737509539?text=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20prohl%C3%ADdku%20a%20bli%C5%BE%C5%A1%C3%AD%20informace%20k%20bytu%20v%20rezidenci%20Harmonia." target="_blank" rel="noopener">WhatsApp</a></div>
 
 <div class="lb" role="dialog" aria-modal="true" aria-label="Galerie">
   <div class="count"></div>
