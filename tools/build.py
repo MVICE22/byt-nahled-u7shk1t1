@@ -236,7 +236,7 @@ HTML = f'''<!doctype html>
 
     <div class="eyebrow reveal" style="margin-top:96px">Rezidence Harmonia a její služby</div>
     <div class="feature-row">
-      <a class="feature reveal" href="#galerie">{im("les-slunce","Lesopark přímo u rezidence","(max-width:640px) 50vw, 25vw")}<div><h3>1 ha lesoparku</h3><p>místa k posezení a pikniku, hřiště na pétanque</p></div></a>
+      <a class="feature reveal" href="#galerie">{im("les-slunce","Lesopark přímo u rezidence","(max-width:640px) 50vw, 25vw")}<div><h3>1 ha privátního lesoparku</h3><p>místa k posezení a pikniku, hřiště na pétanque</p></div></a>
       <a class="feature reveal" style="--d:.08s" href="#galerie">{im("wellness","Wellness v rezidenci","(max-width:640px) 50vw, 25vw")}<div><h3>Privátní wellness</h3><p>se saunou</p></div></a>
       <a class="feature reveal" style="--d:.16s" href="#galerie">{im("fitness","Fitness v rezidenci","(max-width:640px) 50vw, 25vw")}<div><h3>Privátní fitness</h3><p>vnitřní i venkovní</p></div></a>
       <div class="feature reveal" style="--d:.24s"><img src="img/skolka-1600.webp" srcset="img/skolka-900.webp 900w, img/skolka-1600.webp 1600w, img/skolka-2400.webp 2400w, img/skolka-3000.webp 3000w" sizes="(max-width:640px) 50vw, 25vw" width="3000" height="2003" alt="Ilustrační foto: děti si hrají ve školce" loading="lazy"><span class="tag">Ilustrační foto</span><div><h3>Soukromá školka</h3><p>přímo v areálu rezidence</p></div></div>
