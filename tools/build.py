@@ -54,7 +54,7 @@ def im(slug, alt, sizes="(max-width:1024px) 100vw, 50vw", cls=""):
 
 tiles="\n".join(
  f'''      <figure class="tile reveal" style="--ar:{w/h:.4f}" tabindex="0" role="button" data-c="{c}" data-full="img/{s}-{w}.webp" data-cap="{cap}" aria-label="Zvětšit fotku: {cap}">
-        {img(s,w,h,cap,"(max-width:640px) 50vw, (max-width:1024px) 50vw, 33vw")}
+        {img(s,w,h,cap,"(max-width:640px) 56vw, (max-width:1024px) 56vw, 38vw")}
         <figcaption>{cap}</figcaption>
       </figure>''' for s,w,h,c,cap in P)
 
@@ -66,6 +66,9 @@ HTML = f'''<!doctype html>
 <title>Prodej bytu 3+kk s terasou – rezidence Harmonia, Praha 9</title>
 <meta name="description" content="Prodej bytu 3+kk, 78,1 m² plus terasa 14,8 m², v nejvyšším patře rezidence Harmonia v Praze 9 – Hrdlořezích. Přímo od majitele, bez provize. Garážové stání, venkovní stání a sklep v ceně.">
 <meta name="theme-color" content="#F4EFE8">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <meta name="robots" content="noindex,nofollow">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Byt, který má vše – uprostřed zeleně, kousek od centra Prahy">
@@ -98,7 +101,7 @@ HTML = f'''<!doctype html>
 <!-- HERO -->
 <section class="hero">
   <div class="hero-media">
-    <img src="img/obyvak-tv-2400.webp" srcset="img/obyvak-tv-900.webp 900w, img/obyvak-tv-1600.webp 1600w, img/obyvak-tv-2400.webp 2400w, img/obyvak-tv-3000.webp 3000w" sizes="100vw" width="3000" height="2000" alt="Obývací pokoj s TV stěnou, knihovnou, sedačkou a dřevěným obložením" fetchpriority="high">
+    <img src="img/obyvak-tv-2400.webp" srcset="img/obyvak-tv-900.webp 900w, img/obyvak-tv-1600.webp 1600w, img/obyvak-tv-2400.webp 2400w, img/obyvak-tv-3000.webp 3000w" sizes="(max-width:640px) 150vh, 100vw" width="3000" height="2000" alt="Obývací pokoj s TV stěnou, knihovnou, sedačkou a dřevěným obložením" fetchpriority="high">
   </div>
   <div class="wrap hero-content">
     <h1><span class="ln">Byt, </span><span class="ln">který </span><span class="ln">má&nbsp;vše</span><em>uprostřed zeleně, kousek od centra Prahy</em></h1>
@@ -132,7 +135,7 @@ HTML = f'''<!doctype html>
       <p class="lead reveal">Byt 3+kk v nejvyšším patře novostavby rezidence Harmonia (dokončena v 1Q 2026), uprostřed zeleně, ale jen kousek od centra Prahy.</p>
       <p class="reveal">Byt je kompletně vybavený, a to včetně chytré domácnosti Loxone. Je připravený k okamžitému nastěhování. Součástí je garážové stání, venkovní stání s přípravou pro nabíjení elektromobilu i sklep, vše v ceně.</p>
     </div>
-    <div class="photo reveal">{im("terasa-fasada","Terasa v nejvyšším patře rezidence","(max-width:1024px) 100vw, 40vw")}</div>
+    <div class="photo reveal">{im("terasa-fasada","Terasa v nejvyšším patře rezidence","(max-width:1024px) 100vw, 64vw")}</div>
   </div>
 </section>
 
@@ -230,13 +233,13 @@ HTML = f'''<!doctype html>
 
     <div class="eyebrow reveal" style="margin-top:96px">Rezidence Harmonia a její služby</div>
     <div class="feature-row">
-      <a class="feature reveal" href="#galerie">{im("les-slunce","Lesopark přímo u rezidence","(max-width:640px) 50vw, 25vw")}<div><h3>1 ha privátního lesoparku</h3><p>místa k posezení a pikniku, hřiště na pétanque</p></div></a>
-      <a class="feature reveal" style="--d:.08s" href="#galerie">{im("wellness","Wellness v rezidenci","(max-width:640px) 50vw, 25vw")}<div><h3>Privátní wellness</h3><p>se saunou</p></div></a>
-      <a class="feature reveal" style="--d:.16s" href="#galerie">{im("fitness","Fitness v rezidenci","(max-width:640px) 50vw, 25vw")}<div><h3>Privátní fitness</h3><p>vnitřní i venkovní</p></div></a>
-      <div class="feature reveal" style="--d:.24s"><img src="img/skolka-1600.webp" srcset="img/skolka-900.webp 900w, img/skolka-1600.webp 1600w, img/skolka-2400.webp 2400w, img/skolka-3000.webp 3000w" sizes="(max-width:640px) 50vw, 25vw" width="3000" height="2003" alt="Ilustrační foto: děti si hrají ve školce" loading="lazy"><span class="tag">Ilustrační foto</span><div><h3>Soukromá školka</h3><p>přímo v areálu rezidence</p></div></div>
-      <a class="feature pos-l reveal" href="#galerie">{im("aerial-brana","Rezidence z výšky, 66 bytů","(max-width:640px) 50vw, 25vw")}<div><h3>Pouze 66 bytů</h3><p>v celé rezidenci</p></div></a>
-      <div class="feature reveal" style="--d:.08s"><img src="img/kolarna-1125.webp" srcset="img/kolarna-600.webp 600w, img/kolarna-1125.webp 1125w" width="1125" height="1500" sizes="(max-width:640px) 50vw, 25vw" alt="Ilustrační foto: kolárna s koly na stojanech" loading="lazy"><span class="tag">Ilustrační foto</span><div><h3>Kolárna a umývárna kol</h3></div></div>
-      <a class="feature wide zoom reveal" style="--d:.16s" href="#galerie">{im("aerial-les","Rezidence z výšky uprostřed lesů","(max-width:640px) 100vw, 50vw")}<div><h3>Oplocený areál</h3><p>přístupný jen obyvatelům, kamerový systém v celé rezidenci</p></div></a>
+      <a class="feature reveal" href="#galerie">{im("les-slunce","Lesopark přímo u rezidence","(max-width:640px) 100vw, 50vw")}<div><h3>1 ha privátního lesoparku</h3><p>místa k posezení a pikniku, hřiště na pétanque</p></div></a>
+      <a class="feature reveal" style="--d:.08s" href="#galerie">{im("wellness","Wellness v rezidenci","(max-width:640px) 100vw, 50vw")}<div><h3>Privátní wellness</h3><p>se saunou</p></div></a>
+      <a class="feature reveal" style="--d:.16s" href="#galerie">{im("fitness","Fitness v rezidenci","(max-width:640px) 100vw, 50vw")}<div><h3>Privátní fitness</h3><p>vnitřní i venkovní</p></div></a>
+      <div class="feature reveal" style="--d:.24s"><img src="img/skolka-1600.webp" srcset="img/skolka-900.webp 900w, img/skolka-1600.webp 1600w, img/skolka-2400.webp 2400w, img/skolka-3000.webp 3000w" sizes="(max-width:640px) 100vw, 50vw" width="3000" height="2003" alt="Ilustrační foto: děti si hrají ve školce" loading="lazy"><span class="tag">Ilustrační foto</span><div><h3>Soukromá školka</h3><p>přímo v areálu rezidence</p></div></div>
+      <a class="feature pos-l reveal" href="#galerie">{im("aerial-brana","Rezidence z výšky, 66 bytů","(max-width:640px) 100vw, 50vw")}<div><h3>Pouze 66 bytů</h3><p>v celé rezidenci</p></div></a>
+      <div class="feature reveal" style="--d:.08s"><img src="img/kolarna-1125.webp" srcset="img/kolarna-600.webp 600w, img/kolarna-1125.webp 1125w" width="1125" height="1500" sizes="(max-width:640px) 100vw, 50vw" alt="Ilustrační foto: kolárna s koly na stojanech" loading="lazy"><span class="tag">Ilustrační foto</span><div><h3>Kolárna a umývárna kol</h3></div></div>
+      <a class="feature wide zoom reveal" style="--d:.16s" href="#galerie">{im("aerial-les","Rezidence z výšky uprostřed lesů","(max-width:640px) 150vw, 72vw")}<div><h3>Oplocený areál</h3><p>přístupný jen obyvatelům, kamerový systém v celé rezidenci</p></div></a>
     </div>
   </div>
 </section>
