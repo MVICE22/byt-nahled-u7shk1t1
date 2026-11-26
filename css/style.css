@@ -208,7 +208,7 @@ details p{padding:0 0 26px;margin:0;color:var(--muted);max-width:64ch}
 
 /* kontakt */
 .contact{padding:clamp(80px,11vw,150px) 0;background:var(--bg-2)}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,96px);align-items:center}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,96px);align-items:start}
 .contact h2{margin-bottom:24px}
 .card{background:var(--paper);border-radius:var(--r);padding:clamp(28px,4vw,48px);box-shadow:0 30px 80px -44px rgba(10,2,4,.6)}
 .card .who{font:300 1.9rem var(--display);margin-bottom:4px}
