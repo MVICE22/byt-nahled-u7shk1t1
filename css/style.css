@@ -257,7 +257,8 @@ footer p{margin:0;max-width:78ch}
   .mbar{display:flex}
   .nav-cta{display:none}
   main#top{display:flex;flex-direction:column}
-  main#top>.hero{order:-2}
+  main#top>.hero{order:-3}
+  main#top>.facts{order:-2}
   main#top>.gallery{order:-1}
   .hero h1 .ln{display:block}
   .hero::after{height:9%}
