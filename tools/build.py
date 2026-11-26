@@ -127,18 +127,6 @@ HTML = f'''<!doctype html>
   </div>
 </section>
 
-<!-- ÚVOD -->
-<section class="intro">
-  <div class="wrap intro-grid">
-    <div>
-      <h2 class="reveal">Ráno lesopark, odpoledne terasa, <em>večer fitness a sauna</em></h2>
-      <p class="lead reveal">Byt 3+kk v nejvyšším patře novostavby rezidence Harmonia (dokončena v 1Q 2026), uprostřed zeleně, ale jen kousek od centra Prahy.</p>
-      <p class="reveal">Byt je kompletně vybavený, a to včetně chytré domácnosti Loxone. Je připravený k okamžitému nastěhování. Součástí je garážové stání, venkovní stání s přípravou pro nabíjení elektromobilu i sklep, vše v ceně.</p>
-    </div>
-    <div class="photo reveal">{im("terasa-fasada","Terasa v nejvyšším patře rezidence","(max-width:1024px) 100vw, 64vw")}</div>
-  </div>
-</section>
-
 <!-- GALERIE -->
 <section class="gallery" id="galerie">
   <div class="wrap">
