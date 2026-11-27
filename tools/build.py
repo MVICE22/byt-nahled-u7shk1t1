@@ -73,6 +73,7 @@ HTML = f'''<!doctype html>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Prodej bytu 3+kk s terasou – rezidence Harmonia, Praha 9</title>
 <meta name="description" content="Prodej bytu 3+kk, 78,1 m² plus terasa 14,8 m², v nejvyšším patře rezidence Harmonia v Praze 9 – Hrdlořezích. Přímo od majitele, bez provize. Garážové stání, venkovní stání a sklep v ceně.">
+<meta name="format-detection" content="telephone=no">
 <meta name="theme-color" content="#F4EFE8">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
