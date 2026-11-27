@@ -304,6 +304,22 @@ footer p{margin:0;max-width:78ch}
   .hero-actions .btn{padding:14px 18px;font-size:.9rem;white-space:nowrap}
   .hero h1{font-size:min(17.5vw,5rem)}
 }
+@media (max-width:640px) and (max-height:620px){
+  .hero-content{padding-top:80px}
+  .hero{padding-bottom:36px}
+  .hero h1{font-size:min(15.5vw,3.7rem)}
+  .hero h1 em{font-size:.93rem;margin-top:10px}
+  .hero p.sub{font-size:.8rem;line-height:1.42;margin:8px 0 12px}
+  .hero-actions{gap:8px}
+  .hero-actions .btn{padding:11px 16px;font-size:.84rem}
+  .hero-facts div{padding:7px 4px}
+  .hero-facts b{font-size:1.08rem}
+  .hero-facts span{font-size:.64rem}
+  .hero-actions{margin-bottom:10px}
+  .hero-facts{margin-bottom:10px}
+  .hero-price{padding-top:9px;top:10px}
+  .hero-price strong{font-size:1.7rem}
+}
 @media (max-width:640px) and (max-height:700px){
   .hero-content{padding-top:84px}
   .hero{padding-bottom:48px}
