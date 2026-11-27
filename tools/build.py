@@ -355,7 +355,7 @@ HTML = f'''<!doctype html>
   </div>
 </footer>
 
-<div class="mbar" aria-label="Rychlý kontakt"><a class="a" href="tel:+420737509539">Zavolat</a><a class="b" href="https://wa.me/420737509539?text=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20prohl%C3%ADdku%20a%20bli%C5%BE%C5%A1%C3%AD%20informace%20k%20bytu%20v%20rezidenci%20Harmonia." target="_blank" rel="noopener">WhatsApp</a></div>
+<div class="mbar" aria-label="Rychlý kontakt"><a class="a" href="tel:+420737509539">Zavolat</a><a class="b" href="mailto:matejvais@seznam.cz?subject=Prohl%C3%ADdka%20bytu%20Harmonia&amp;body=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20prohl%C3%ADdku%20a%20bli%C5%BE%C5%A1%C3%AD%20informace%20k%20bytu%20v%20rezidenci%20Harmonia.">E-mail</a></div>
 
 <div class="lb" role="dialog" aria-modal="true" aria-label="Galerie">
   <div class="count"></div>
