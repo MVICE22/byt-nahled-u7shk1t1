@@ -90,7 +90,8 @@ HTML = f'''<!doctype html>
 <meta property="og:image:alt" content="Obývací pokoj bytu 3+kk s dřevěným obložením, sedačkou a prosklenými dveřmi na terasu">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="cs_CZ">
-<link rel="preload" href="fonts/fraunces_vf_latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jost_vf_latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/manrope_vf_latin-wght-normal.woff2" as="font" type="font/woff2" media="(max-width:640px)" crossorigin>
 <link rel="preload" href="fonts/inter_vf_latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css?v={ASSET_V["css"]}">
 </head>
@@ -119,13 +120,15 @@ HTML = f'''<!doctype html>
     <img src="img/obyvak-tv-2400.webp" srcset="img/obyvak-tv-900.webp 900w, img/obyvak-tv-1600.webp 1600w, img/obyvak-tv-2400.webp 2400w, img/obyvak-tv-3000.webp 3000w" sizes="(max-width:640px) 150vh, 100vw" width="3000" height="2000" alt="Obývací pokoj s TV stěnou, knihovnou, sedačkou a dřevěným obložením" fetchpriority="high">
   </div>
   <div class="wrap hero-content">
-    <h1><span class="ln">Byt, </span><span class="ln">který </span><span class="ln">má&nbsp;vše</span><em>uprostřed zeleně, kousek od centra Prahy</em></h1>
-    <p class="sub">Byt 3+kk, 78,1&nbsp;m² + terasa 14,8&nbsp;m² v Praze. Kompletně vybavený, připravený k okamžitému nastěhování. Prodej přímo od majitele, bez realitní kanceláře a provize.</p>
+    <div class="hero-kicker">Prodej bytu 3+kk · Praha 9</div>
+    <h1><span class="ln">Byt, </span><span class="ln">který </span><span class="ln">má&nbsp;<span class="acc">vše</span></span><em>uprostřed zeleně, kousek od centra Prahy</em></h1>
+    <p class="sub"><span class="spec">Byt 3+kk, 78,1&nbsp;m² + terasa 14,8&nbsp;m² v Praze. </span>Kompletně vybavený, připravený k okamžitému nastěhování. Prodej přímo od majitele, bez realitní kanceláře a provize.</p>
     <div class="hero-actions">
       <a class="btn btn-light" href="#kontakt">Domluvit si prohlídku</a>
       <a class="btn btn-ghost" href="#galerie">Galerie</a>
     </div>
   </div>
+  <div class="hero-facts"><div><b>78,1&nbsp;m²</b><span>byt 3+kk</span></div><div><b>14,8&nbsp;m²</b><span>terasa</span></div><div><b>3. NP</b><span>nejvyšší patro</span></div></div>
   <div class="hero-price"><small>Celková cena</small><strong>16&nbsp;890&nbsp;000&nbsp;Kč</strong></div>
   <div class="scroll-cue" aria-hidden="true"></div>
 </section>
