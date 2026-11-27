@@ -281,7 +281,8 @@ footer p{margin:0;max-width:78ch}
   .hero h1 em{font:400 clamp(1.1rem,4.9vw,1.3rem)/1.35 "Manrope",var(--sans);color:#F1DDBB;margin-top:16px;max-width:none;letter-spacing:0}
   .hero p.sub{font-size:.9rem;line-height:1.55;margin:14px 0 20px}
   .hero .spec{display:none}
-  .hero .btn-light{background:#D8B484}
+  .hero-actions a:nth-child(2){order:-1;background:#D8B484;color:#2B2118;border-color:transparent;-webkit-backdrop-filter:none;backdrop-filter:none}
+  .hero-actions a:nth-child(1){background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.45);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
   .hero-facts{display:flex;position:absolute;z-index:3;left:var(--gutter);right:var(--gutter);bottom:112px;border-radius:18px;background:rgba(255,255,255,.12);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.2)}
   .hero-facts div{flex:1;padding:12px 6px;text-align:center;border-right:1px solid rgba(255,255,255,.18)}
   .hero-facts div:last-child{border:0}
