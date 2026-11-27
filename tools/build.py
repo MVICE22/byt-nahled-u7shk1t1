@@ -63,6 +63,9 @@ tiles="\n".join(
         <figcaption>{cap}</figcaption>
       </figure>''' for s,w,h,c,cap in P)
 
+import hashlib
+ASSET_V={k:hashlib.md5(open(f,'rb').read()).hexdigest()[:8] for k,f in (("css","css/style.css"),("js","js/main.js"))}
+
 HTML = f'''<!doctype html>
 <html lang="cs">
 <head>
@@ -89,7 +92,7 @@ HTML = f'''<!doctype html>
 <meta property="og:locale" content="cs_CZ">
 <link rel="preload" href="fonts/fraunces_vf_latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/inter_vf_latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v={ASSET_V["css"]}">
 </head>
 <body>
 
@@ -358,7 +361,7 @@ HTML = f'''<!doctype html>
   <figure><img alt=""><figcaption></figcaption></figure>
 </div>
 
-<script src="js/main.js" defer></script>
+<script src="js/main.js?v={ASSET_V["js"]}" defer></script>
 </body>
 </html>
 '''
