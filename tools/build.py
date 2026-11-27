@@ -234,7 +234,7 @@ HTML = f'''<!doctype html>
       </div>
     </div>
 
-    <div class="eyebrow reveal" style="margin-top:96px">Rezidence Harmonia a její služby</div>
+    <div class="eyebrow reveal" style="margin-top:96px;margin-bottom:14px;display:flex">Rezidence Harmonia a její služby</div>
     <div class="feature-row">
       <a class="feature reveal" href="#galerie">{im("les-slunce","Lesopark přímo u rezidence","(max-width:640px) 100vw, 50vw")}<div><h3>1 ha privátního lesoparku</h3><p>místa k posezení a pikniku, hřiště na pétanque</p></div></a>
       <a class="feature reveal" style="--d:.08s" href="#galerie">{im("wellness","Wellness v rezidenci","(max-width:640px) 100vw, 50vw")}<div><h3>Privátní wellness</h3><p>se saunou</p></div></a>
