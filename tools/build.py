@@ -131,7 +131,6 @@ HTML = f'''<!doctype html>
   </div>
   <div class="hero-facts"><div><b>78,1&nbsp;m²</b><span>byt 3+kk</span></div><div><b>14,8&nbsp;m²</b><span>terasa</span></div><div><b>3. NP</b><span>nejvyšší patro</span></div></div>
   <div class="hero-price"><small>Celková cena</small><strong>16&nbsp;890&nbsp;000&nbsp;Kč</strong></div>
-  <div class="scroll-cue" aria-hidden="true"></div>
 </section>
 
 <!-- FAKTA -->
