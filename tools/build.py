@@ -123,7 +123,7 @@ HTML = f'''<!doctype html>
   <div class="wrap hero-content">
     <div class="hero-kicker">Prodej bytu 3+kk · Praha 9</div>
     <h1><span class="ln">Byt, </span><span class="ln">který </span><span class="ln">má&nbsp;<span class="acc">vše</span></span><em>uprostřed zeleně, kousek od centra Prahy</em></h1>
-    <p class="sub"><span class="spec">Byt 3+kk, 78,1&nbsp;m² + terasa 14,8&nbsp;m² v Praze. </span><span class="mo">Luxusní rezidence, kompletně vybavený</span><span class="pc">Kompletně vybavený</span>, připravený k okamžitému nastěhování. Prodej přímo od majitele, bez realitní kanceláře a provize.</p>
+    <p class="sub"><span class="spec">Byt 3+kk, 78,1&nbsp;m² + terasa 14,8&nbsp;m² v luxusní rezidenci v Praze. </span><span class="mo">Luxusní rezidence, kompletně vybavený</span><span class="pc">Kompletně vybavený</span>, připravený k okamžitému nastěhování. Prodej přímo od majitele, bez realitní kanceláře a provize.</p>
     <div class="hero-actions">
       <a class="btn btn-light" href="#kontakt">Domluvit si prohlídku</a>
       <a class="btn btn-ghost" href="#galerie">Galerie</a>
