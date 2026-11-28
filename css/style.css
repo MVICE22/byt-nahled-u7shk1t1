@@ -270,7 +270,7 @@ footer p{margin:0;max-width:78ch}
   main#top>.desc{order:-1}
   .hero{min-height:100svh;flex-direction:column;align-items:stretch;padding-bottom:62px}
   .hero::before{background:linear-gradient(180deg,rgba(20,8,10,.62) 0%,rgba(20,8,10,.25) 42%,rgba(20,8,10,.1) 60%,rgba(20,8,10,.82) 100%)}
-  .hero::after{height:24%;background:linear-gradient(180deg,rgba(238,224,204,0) 0%,rgba(238,224,204,.02) 18%,rgba(238,224,204,.07) 36%,rgba(238,224,204,.16) 52%,rgba(238,224,204,.32) 67%,rgba(238,224,204,.6) 83%,var(--bg-2) 100%)}
+  .hero::after{height:30%;background:linear-gradient(180deg,rgba(238,224,204,0.000) 0%,rgba(238,224,204,0.028) 10%,rgba(238,224,204,0.104) 20%,rgba(238,224,204,0.216) 30%,rgba(238,224,204,0.352) 40%,rgba(238,224,204,0.500) 50%,rgba(238,224,204,0.648) 60%,rgba(238,224,204,0.784) 70%,rgba(238,224,204,0.896) 80%,rgba(238,224,204,0.972) 90%,var(--bg-2) 100%)}
   .hero-media img,.hero-media video{object-position:34% 50%}
   .hero-content{padding-top:96px;padding-bottom:0}
   .hero-kicker{display:flex;align-items:center;gap:12px;font:500 .69rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#D8B484;margin-bottom:-5px}
